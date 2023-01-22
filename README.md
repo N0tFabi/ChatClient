@@ -10,7 +10,7 @@ You can choose your name and chat with that name on a local Chat Server
 
 # How the code works:
 
-## ChatServer:
+## ChatServer
 This server uses a ServerSocket to listen for incoming connections on port 8000. When a new client connects, it creates a new ClientHandler object to handle the client, adds it to a list of connected clients, and starts a new thread to handle the client. The ClientHandler class reads the client's name, sends a message to all connected clients to inform them of the new client, and continuously reads messages from the client and sends them to all connected clients. If a client disconnects, the ClientHandler removes the client from the list of connected clients and sends a message to all connected clients to inform them of the client disconnection.
 
 ## ChatClient
